@@ -1,0 +1,49 @@
+/* CSS Reset */
+h1 {
+  margin: unset;
+  font-weight: unset;
+  font-size: unset;
+  padding: unset;
+}
+ 
+ 
+ /* 한글 폰트 설정 */
+* {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* Layout */
+.l_wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* Web Design */
+
+header {
+  background-color: #f4f4f4;
+}
+
+.header-inside {
+  padding-top: 66px;
+  padding-bottom: 66px;
+  background-image: url(./images/icon.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 124px 100px;
+}
+
+.header-inside .MFF-title {
+  color: #FF6600;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+main {
+  box-shadow: inset 0 0 20px orange;
+}
+
+footer{
+  box-shadow: inset 0 0 20px blue;
+}
+
