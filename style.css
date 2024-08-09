@@ -66,12 +66,10 @@ header {
 }
 
 .header-inside {
-  padding-top: 66px;
-  padding-bottom: 66px;
-  background-image: url(./images/icon.png);
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 124px 100px;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  align-items: center;
 }
 
 .header-inside .MFF-title {
@@ -80,9 +78,17 @@ header {
   font-size: 24px;
 }
 
+.header-inside .MFF-title-img {
+  width: 124px;
+  height: 100px;
+  vertical-align: top;
+  margin-left: auto;
+}
+
 main {
   background-color: #d9d9d9;
 }
+
 
 .content-inside .MFF-food {
  background-color: #fff;
@@ -108,7 +114,7 @@ main {
   width: fit-content;
   position: relative;
   z-index: 5;
-  margin-top: -60px;                     /* 마음에 안드는 부분, 유지보수성 -- */                            
+  margin-top: -60px;                                             
   color: #ff6600;
   font-weight: bold;
   font-size: 24px;
@@ -160,7 +166,7 @@ main {
  }
  
 footer {
-  padding: 30px 0px;
+  padding-bottom: 30px;
   background-color: #d9d9d9;;
   color: #aaa;
   font-size: 12px;
@@ -168,9 +174,43 @@ footer {
 }
 
 @media (max-width: 600px) {
-  .header-inside .MFF-title {
-    color: red;
-    font-weight: bold;
-    font-size: 24px;
+  body {
+    width: 100%;
   }
+
+  .l_wrapper {
+    width: inherit;
+  }
+
+  .header-inside {
+    margin: 0 auto;
+    width: fit-content;
+    flex-direction: column-reverse;
+  }
+
+  .header-inside .MFF-title-img {
+    width: 199px;
+    height: 144px;
+    vertical-align: top;
+  }
+
+  .l_row {
+    justify-content: center;
+    row-gap: 30px;
+    padding: 30px;
+  }
+
+  .l_col_tablet_12_12 { 
+    width: 100%;
+  }
+
+  .content-inside .MFF-food {
+    margin: 0px 24%;         
+    overflow: hidden;
+  }
+
+  .footer-inside {
+    text-align: center;
+  }
+
 }
